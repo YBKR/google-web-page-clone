@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+/*Header*/
+
+header{
+    height: 60px;
+}
+
+.navbar{
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+}
+
+.navbar ul{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 15px;
+}
+
+.navbar ul li {
+    margin-left: 15px;
+}
+
+.navbar ul li a{
+    color: #000;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.circle-shadow{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-shadow:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon,
+.user-icon{
+    font-size: 15px;
+}
+
+.user-icon span {
+    color: #fff;
+}
+
+.user-icon{
+    background-color: orange;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+/*content*/
+
+.content-section{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wraper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.logo-image{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.search-bar{
+    border: 1px sollid lightgrey;
+    width: 600px;
+    height: 45px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar input:focus{
+    outline: none;
+}
+
+.search-bar:hover{
+    box-shadow: 0px 0px 4px 0 lightgray;
+}
+
+.search-bar i{
+    font-size: 18px;
+    margin: 0 15px;
+    color: gray;
+    cursor: pointer;
+}
+
+.search-bar input{
+    flex-grow: 1;
+    height: 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    border: none;
+}
+
+.search-btns{
+    margin-top: 20px;
+}
+
+.search-btns button {
+    height: 40px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    background-color: #F2F3F4;
+    padding: 10px;
+}
+
+.search-btns button:hover{
+    border: 1px solid lightgray;
+}
+
+.google-search-btn{
+    width: 140px;
+}
+
+.lucky-search-btn{
+    width: 160px;
+}
+
+
+.languages{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.languages p a{
+    color: blue;
+}
+
+.languages p a:hover{
+    text-decoration: underline;
+}
+
+/*Footer*/
+
+footer{
+    height: 100px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.upper-footer{
+    height: 50%;
+    border-bottom: 1px solid lightgray;
+}
+
+.upper-footer p{
+    color: gray;
+    font-size: 14px;
+}
+
+.lower-footer{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower-footer ul li a{
+    font-size: 14px;
+    color: gray;
+}
+
+.lower-footer ul li a:hover{
+    text-decoration: underline;
+}
+
+.lower-left-footer{
+    display: flex;
+}
+
+.lower-left-footer li{
+    margin-right: 15px;
+}
+
+.lower-right-footer{
+    display: flex;
+}
+
+.lower-right-footer li{
+    margin-left: 15px;
+}
+
+/* Media queries foe Mobile and Tablets */
+
+@media only screen and (max-width: 650px) {
+    /* Navbar */
+    .navbar ul {
+        font-size: 10px;
+    }
+
+    .menu-icon,
+    .user-icon span {
+        font-size: 14px;
+    }
+
+    .circle-shadow {
+        height: 30px;
+        width: 30px;
+    }
+
+    /* Logo */
+    .logo-img {
+        width: 200px;
+    }
+
+    /* Search Bar */
+    .search-bar {
+        width: 90%;
+        height: 35px;
+    }
+
+    .search-bar i {
+        font-size: 14px;
+    }
+
+    /* Buttons */
+    .search-btns button {
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .google-search-btn {
+        width: 100px;
+    }
+    
+    .lucky-search-btn {
+        width: 120px;
+    }
+
+    /* Language */
+    .language {
+        font-size: 12px;
+    }
+
+    /* Footer */
+    footer {
+        height: 150px;
+    }
+
+    .upper-footer {
+        height: 50px;
+    }
+
+    .lower-footer {
+        height: 100px;
+        flex-direction: column;
+    }
+
+    .lower-left-footer {
+        flex-wrap: wrap;
+    }
+}
